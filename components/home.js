@@ -9,14 +9,14 @@ function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   const Trail = ({ open, children }) => {
-    const items = React.Children.toArray(children)
+    const items = React.Children.toArray(children);
     const trail = useTrail(items.length, {
       config: { mass: 5, tension: 2000, friction: 200 },
       opacity: open ? 1 : 0,
       x: open ? 0 : 20,
       height: open ? 110 : 0,
       from: { opacity: 0, x: 20, height: 0 },
-    })
+    });
     return (
       <div>
         {trail.map(({ height, ...style }, index) => (
@@ -25,15 +25,16 @@ function Home() {
           </a.div>
         ))}
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.left}>
         <h1 className={styles.intro}>
           {/* Fullstack <br /> */}
-          Jhn <br />
+          Jhn Kreatur
+          <br />
           Software <br />
           Developer.
         </h1>
