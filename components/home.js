@@ -33,7 +33,7 @@ function Home() {
       <div className={styles.left}>
         <h1 className={styles.intro}>
           {/* Fullstack <br /> */}
-          Jhn Kreatur
+          Jhn K.
           <br />
           Software <br />
           Developer.
