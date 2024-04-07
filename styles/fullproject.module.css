@@ -1,0 +1,40 @@
+.post {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Fredericka the Great";
+  margin: 0;
+  margin-top: 1rem;
+}
+.date {
+  background-color: #000;
+  color: #f2d079;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: -1rem;
+  font-size: 14px;
+}
+.body {
+  font-size: 26px;
+  margin-top: -1rem;
+}
+@media (min-width: 600px) {
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  .articleImage {
+    min-width: 35%;
+    padding: 0;
+    margin-top: 2rem;
+    margin-right: 0;
+  }
+}

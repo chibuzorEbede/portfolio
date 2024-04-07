@@ -1,0 +1,58 @@
+.wrapper {
+  background-image: url("/images/bg-small.svg");
+  background-color: #f2d079;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  position: relative;
+}
+
+.container {
+  /* border: 1px solid #000; */
+  padding: 0 1rem 0 1rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 0;
+  /* border-bottom: 1px solid #000; */
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.navList {
+  display: none;
+  gap: 2rem;
+}
+
+.navItem {
+  font-family: "Fredericka the Great", cursive;
+  text-transform: capitalize;
+}
+
+.rotateRight {
+  transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: rotate(90deg);
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    padding: 2rem 4rem;
+  }
+
+  .navList {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

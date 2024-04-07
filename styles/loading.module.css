@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.loading {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 93.6%;
+  text-transform: capitalize;
+}

@@ -1,116 +1,113 @@
-.container {
-  padding: 0 2rem;
+.intro {
+  /* font-family: "Fredericka the Great", cursive; */
+  font-family: "Fredericka the Great";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 93.6%;
+  margin-top: 4rem;
+  margin-bottom: 10px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.mission {
+  margin: 0;
+  font-size: 26px;
+  line-height: 154%;
+  max-width: 60%;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
+.underline {
   text-decoration: underline;
+  /* cursor: pointer; */
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  overflow: hidden;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.left,
+.right {
+  /* flex: 1; */
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.right {
+  display: none;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.btn {
+  color: #f2d079;
+  background-color: #000;
+  font-size: 20px;
+  padding: 0.6em;
+  border: none;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  cursor: pointer;
+  display: none;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.ring {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 370px;
+  height: 370px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.things {
+  margin-top: 2rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.projectsList {
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+
+.project {
+  padding: 1rem;
+  border: 1px solid #000;
+  /* width: 193px; */
+  /* height: 205px; */
+  flex: 0 0 auto;
+  /* border-radius: 4px; */
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    font-size: 80px;
+    font-size: 96px;
+    font-weight: 400;
+  }
+
+  .mission {
+    font-size: 28px;
+    font-size: 40px;
+    max-width: 80%;
+    line-height: 1.2;
+  }
+
+  .right {
+    display: flex;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .things,
+  .projectsList {
+    display: none;
   }
 }

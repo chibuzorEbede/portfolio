@@ -1,0 +1,30 @@
+.wrapper {
+  /* letter-spacing: 0.09em; */
+  font-weight: 400;
+  line-height: 1.5;
+}
+.aboutText {
+  font-size: 26px;
+}
+.aboutImage {
+  margin-top: 26px;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    /* justify-content: space-between; */
+    gap: 4rem;
+  }
+  .aboutImage {
+  }
+  .aboutText {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    max-width: 60%;
+  }
+}

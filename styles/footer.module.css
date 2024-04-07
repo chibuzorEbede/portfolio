@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 10vh; */
+  margin-top: 6rem;
+}
+
+.icon {
+  font-size: 12px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}

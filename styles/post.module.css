@@ -1,0 +1,23 @@
+.post {
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Fredericka the Great";
+  margin: 0;
+}
+.date {
+  background-color: #000;
+  color: #f2d079;
+  width: 27%;
+  padding: 0.2rem;
+  margin-top: 0.3rem;
+  margin-bottom: -1rem;
+  font-size: 14px;
+}
+.body {
+  font-size: 26px;
+}
