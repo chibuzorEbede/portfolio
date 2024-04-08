@@ -12,7 +12,12 @@ function About() {
     <Layout>
       <div className={styles.wrapper}>
         <div className={styles.aboutImage}>
-          <Image alt="my picture" src={`/images/about_image.png`} height={342} width={367} />
+          <Image
+            alt="my picture"
+            src={`/images/about_image.png`}
+            height={342}
+            width={367}
+          />
         </div>
         <div className={styles.aboutText}>
           {/* <p>
@@ -34,12 +39,11 @@ function About() {
             ideas into reality.
           </p>
           <p>
-            When am not coding, am probably trapping to some old jazz.
-            <br /> Wanna hangout? Ping my socials. <br />
-            (Not much eh?)
+            When I'm not coding, I'm probably trapping to some old jazz.
+            <br /> Connect with me? Ping my socials or shoot me an email. <br />
           </p>
           <p>
-            Email: <a href={`mailto:jhn@kreatur.dev`}>jhn@kreatur.dev</a>
+            Email: <a href={`mailto:jhnsc62@gmail.com`}>jhn@kreatur.dev</a>
           </p>
         </div>
       </div>

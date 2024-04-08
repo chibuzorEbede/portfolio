@@ -33,7 +33,7 @@ function Home() {
       <div className={styles.left}>
         <h1 className={styles.intro}>
           {/* Fullstack <br /> */}
-          Jhn K.
+          Jhn
           <br />
           Software <br />
           Developer.
@@ -41,7 +41,7 @@ function Home() {
 
         <p className={styles.mission}>
           passionate about creating <br /> great experiences for my{" "}
-          <span className={styles.underline}>Clients</span>.
+          <span className={styles.underline}>Users</span>.
         </p>
         <div className={styles.projects}>
           <button className={styles.btn}>
@@ -57,11 +57,15 @@ function Home() {
             />
           </p>
           <ul className={styles.projectsList}>
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            {projectData.map((project) => (
+              <Project
+                key={project.id}
+                title={project.title}
+                stack={project.stack}
+                giturl={project.giturl}
+                liveurl={project.liveurl}
+              />
+            ))}
           </ul>
         </div>
       </div>
@@ -76,16 +80,39 @@ function Home() {
 
 export default Home;
 
-function Project() {
+const projectData = [
+  {
+    id: 1,
+    title: "JobRabbit",
+    stack: "react | tailwind | api",
+    giturl: "github.com",
+    liveurl: "live.com",
+  },
+  {
+    id: 2,
+    title: "Agserver",
+    stack: "react | mui | api",
+    giturl: "github.com",
+    liveurl: "live.com",
+  },
+  {
+    id: 3,
+    title: "Portfolio",
+    stack: "next | css | framer",
+    giturl: "github.com",
+    liveurl: "live.com",
+  },
+];
+function Project({ title, stack, giturl, liveurl }) {
   return (
     <li className={styles.project}>
-      <h4>Agserver</h4>
-      <span>react | mui | api</span>
+      <h4>{title}</h4>
+      <span>{stack}</span>
       <div className={styles.links}>
-        <Link href="github.com" passHref>
+        <Link href={giturl} passHref>
           <FaGithub />
         </Link>
-        <Link href="live.com" passHref>
+        <Link href={liveurl} passHref>
           <FaArrowRight />
         </Link>
       </div>

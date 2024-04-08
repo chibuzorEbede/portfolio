@@ -13,6 +13,7 @@
 9. in projects, make card footer nicer. make equal spacing between the elements
 10. add email to homepage
 11. add all links; posts menu socials
+12. update twitter to X
 
 ## glitches in mobile mode
 
