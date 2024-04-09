@@ -35,12 +35,12 @@ function About() {
           </p> */}
           <p>
             I usually work with different tools and frameworks (React,
-            Next,Node,Python, Strapi, some other cool stuff) to turn my client’s
-            ideas into reality.
+            ,Node,Next,Tailwind, Strapi and some other cool stuff) to turn my
+            client’s ideas into reality.
           </p>
           <p>
             When I am not coding, I&apos;m probably trapping to some old jazz.
-            <br /> Connect with me? Ping my socials or shoot me an email. <br />
+            <br /> Connect with me? Ping my socials or send me an email. <br />
           </p>
           <p>
             Email: <a href={`mailto:jhnsc62@gmail.com`}>jhn@kreatur.dev</a>
