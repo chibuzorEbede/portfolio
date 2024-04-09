@@ -41,7 +41,7 @@ function Home() {
 
         <p className={styles.mission}>
           passionate about creating <br /> great experiences for my{" "}
-          <span className={styles.underline}>Users</span>.
+          <span className={styles.underline}>Clients</span>.
         </p>
         <div className={styles.projects}>
           <button className={styles.btn}>
@@ -90,17 +90,17 @@ const projectData = [
   },
   {
     id: 2,
-    title: "Agserver",
+    title: "Agserver<New>",
     stack: "react | mui | api",
-    giturl: "github.com",
-    liveurl: "live.com",
+    giturl: "https://github.com/chibuzorEbede/ag",
+    liveurl: "https://agserver.vercel.app/",
   },
   {
     id: 3,
     title: "Portfolio",
     stack: "next | css | framer",
-    giturl: "github.com",
-    liveurl: "live.com",
+    giturl: "https://github.com/chibuzorEbede/portfolio",
+    liveurl: "https://jhnsc-portfolio.vercel.app/",
   },
 ];
 function Project({ title, stack, giturl, liveurl }) {
