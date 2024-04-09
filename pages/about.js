@@ -39,7 +39,7 @@ function About() {
             ideas into reality.
           </p>
           <p>
-            When I'm not coding, I'm probably trapping to some old jazz.
+            When I am not coding, I&apos;m probably trapping to some old jazz.
             <br /> Connect with me? Ping my socials or shoot me an email. <br />
           </p>
           <p>
