@@ -30,6 +30,7 @@
 .links {
   display: flex;
   justify-content: space-between;
+  
 }
 .projectsList {
   padding: 0;
@@ -66,6 +67,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   .links{
-    display: block;
+    /* display: block; */
   }
 }

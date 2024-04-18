@@ -6,7 +6,7 @@ import Image from "next/image";
 import Layout from "../components/layout";
 import styles from "../styles/projects.module.css";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
-import { projects } from '../data'
+import { projects } from "../data";
 
 function Projects() {
   return (
@@ -17,8 +17,16 @@ function Projects() {
       <section>
         <p className={styles.title}>Things I&apos;ve Kreated</p>
         <ul className={styles.projectsList}>
-          {projects.map((project) => <Project key={project.id} image={project.image} title={project.title} stacks={project.stacks} source={project.source} live={project.live} />)}
-
+          {projects.map((project) => (
+            <Project
+              key={project.id}
+              image={project.image}
+              title={project.title}
+              stacks={project.stacks}
+              source={project.source}
+              live={project.live}
+            />
+          ))}
         </ul>
       </section>
     </Layout>
@@ -30,11 +38,13 @@ function Project({ image, title, stacks, source, live }) {
   return (
     <li className={styles.card}>
       <div className={styles.cardHeader}>
-        <Image alt="project image" src={image} height={342} width={380} />
+        <Image alt="project image" src={image} height={342} width={420} />
       </div>
       <div className={styles.cardFooter}>
         <h4 className={styles.cardTitle}>{title}</h4>
-        <span className={styles.stacks}>{stacks.map((stack) => `${stack}. `)}</span>
+        <span className={styles.stacks}>
+          {stacks.map((stack) => `${stack}. `)}
+        </span>
         <div className={styles.links}>
           <Link href={source} passHref>
             <FaGithub />

@@ -31,21 +31,21 @@ export const posts = [
   },
 ];
 export const projects = [
-  {
-    id: 1,
-    title: "Agserver",
-    stacks: ["rapid api", "wordpress"],
-    source: "#",
-    live: "https://agserver.net",
-    image: "/images/agserver_screenshot.png",
-  },
+  // {
+  //   id: 1,
+  //   title: "Agserver",
+  //   stacks: ["rapid api", "wordpress"],
+  //   source: "#",
+  //   live: "https://agserver.net",
+  //   image: "/images/agserver_screenshot.png",
+  // },
   {
     id: 2,
-    title: "Agserver <New>",
+    title: "Agserver",
     stacks: ["react", "node", "tailwind", "rapid api"],
     source: "https://github.com/chibuzorEbede/ag",
     live: "https://agserver.vercel.app/",
-    image: "/images/agserver_new_screenshot.png",
+    image: "/images/agserver-preview.png",
   },
   {
     id: 3,
@@ -54,6 +54,14 @@ export const projects = [
     source: "https://github.com/chibuzorEbede/portfolio",
     live: "https://jhnsc-portfolio.vercel.app/",
     image: "/images/portfolio_screenshot.png",
+  },
+  {
+    id: 4,
+    title: "JobRabbit",
+    stacks: ["rapid api", "React", "Tailwind"],
+    source: "https://github.com/chibuzorEbede/jobrabbit",
+    live: "https://jobrabbit.vercel.app/",
+    image: "/images/jobrabbit-preview.png",
   },
   // {
   //   id: 4,
