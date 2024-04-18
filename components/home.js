@@ -44,9 +44,11 @@ function Home() {
           <span className={styles.underline}>Clients</span>.
         </p>
         <div className={styles.projects}>
-          <button className={styles.btn}>
-            things I&apos;ve made <FaArrowRight />{" "}
-          </button>
+          <Link href="/projects">
+            <button className={styles.btn}>
+              things I&apos;ve made <FaArrowRight />{" "}
+            </button>
+          </Link>
           <p className={styles.things}>
             Things I&apos;ve Kreated{" "}
             <FaArrowRight
@@ -90,8 +92,8 @@ const projectData = [
   },
   {
     id: 2,
-    title: "Agserver<New>",
-    stack: "react | mui | api",
+    title: "Agserver",
+    stack: "react | css | api",
     giturl: "https://github.com/chibuzorEbede/ag",
     liveurl: "https://agserver.vercel.app/",
   },
