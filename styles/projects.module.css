@@ -8,13 +8,21 @@
 
 /* styling for project card */
 
+/* TODO improve the box shadow on the card component*/
 .card{
   flex: 0 0 auto;
   border: 1px solid #000;
+  box-shadow: 2px 2px 4px -2px #000 ,-2px -2px 4px -2px #000 ;
+  border-radius: 8px;
 }
 .cardHeader{
   margin-bottom: 0;
   padding-bottom: 0;  
+}
+.cardHeader > *{
+  min-width: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 .cardFooter{
   margin-top: -40px;
@@ -22,14 +30,19 @@
 }
 .cardTitle{
   margin-bottom: 0;
+  padding-top: 8px;
+
 }
 .stacks{
   display: inline-block;
   margin-bottom: 8px;
+  padding: 8px 0;
+
 }
 .links {
   display: flex;
   justify-content: space-between;
+  padding: 8px 0;
   
 }
 .projectsList {

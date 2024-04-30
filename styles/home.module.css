@@ -70,18 +70,27 @@
   gap: 0.5rem;
 }
 
+/* make last child of project list visible */
+
+
 .project {
   padding: 1rem;
   border: 1px solid #000;
   /* width: 193px; */
   /* height: 205px; */
   flex: 0 0 auto;
-  /* border-radius: 4px; */
+  border-radius: 4px;
+}
+
+.stack{
+  font-size: medium;
+  margin-top: -4px;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
 }
 
 @media (min-width: 600px) {

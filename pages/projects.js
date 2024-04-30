@@ -12,7 +12,7 @@ function Projects() {
   return (
     <Layout>
       <Head>
-        <title>Jhn Kreatur | Posts</title>
+        <title>Jhn Kreatur | Projects</title>
       </Head>
       <section>
         <p className={styles.title}>Things I&apos;ve Kreated</p>

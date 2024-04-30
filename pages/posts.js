@@ -4,8 +4,9 @@ import Layout from "../components/layout";
 import styles from "../styles/posts.module.css";
 import Post from "../components/post";
 import { posts } from "../data";
+import Link from "next/link";
 
-function Posts({ title, date, body }) {
+function Posts() {
   return (
     <Layout>
       <div>
@@ -15,7 +16,14 @@ function Posts({ title, date, body }) {
         <section>
           <p className={styles.title}>Thoughts?</p>
           <div className={styles.postsWrapper}>
-            {posts.map((post) => <Post key={post.id} title={post.title} date={post.date} body={post.body} />)}
+            {posts.map((post) => (
+              <Post
+                key={post.id}
+                title={post.title}
+                date={post.date}
+                body={post.body}
+              />
+            ))}
           </div>
         </section>
       </div>

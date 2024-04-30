@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/layout";
@@ -13,7 +13,7 @@ export default function Home() {
   //     setIsLoading(false);
   //   }
   // }, []);
-  setTimeout(() => setIsLoading(false), 2000)
+  setTimeout(() => setIsLoading(false), 2000);
 
   if (isLoading) {
     return <Loading />;

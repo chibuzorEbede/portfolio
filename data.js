@@ -21,13 +21,13 @@ export const posts = [
     id: 4,
     title: "Endless Conundrums",
     date: "03/02/2024",
-    body: "Unraveling the deepest parts of asynchronous JS development.",
+    body: "Unraveling the deepest parts of asynchronous JS.",
   },
   {
     id: 5,
-    title: "A Star is born",
+    title: "Another Star is born",
     date: "12/18/2023",
-    body: "There is nothing perfect in the world, only chaos.",
+    body: "There is nothing perfect in the world, only JavaScript. The birth of a new framework",
   },
 ];
 export const projects = [

@@ -109,7 +109,7 @@ function Project({ title, stack, giturl, liveurl }) {
   return (
     <li className={styles.project}>
       <h4>{title}</h4>
-      <span>{stack}</span>
+      <span className={styles.stack}>{stack}</span>
       <div className={styles.links}>
         <Link href={giturl} passHref>
           <FaGithub />
