@@ -25,7 +25,7 @@ function About() {
           </p> */}
           <p>
             <u className={utils.capitalize}>Hi,</u> <br />
-            I&apos;m John Kreatur. <br /> A Frontend Software Developer from
+            I&apos;m Chibuzor Ebede. <br /> A Frontend Software Developer from
             somewhere on the equator.
           </p>
           {/* <p>
@@ -40,10 +40,13 @@ function About() {
           </p>
           <p>
             When I am not coding, I&apos;m probably trapping to some old jazz.
-            <br /> Connect with me? Ping my socials or send me an email. <br />
+            <br /> Connect with me? Use my socials or send me an email. <br />
           </p>
           <p>
-            Email: <a href={`mailto:jhnsc62@gmail.com`}>jhn@kreatur.dev</a>
+            Email:{" "}
+            <a href={`mailto:chibuzorebede@gmail.com`}>
+              chibuzorebede@gmail.com
+            </a>
           </p>
         </div>
       </div>

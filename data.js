@@ -31,14 +31,6 @@ export const posts = [
   },
 ];
 export const projects = [
-  // {
-  //   id: 1,
-  //   title: "Agserver",
-  //   stacks: ["rapid api", "wordpress"],
-  //   source: "#",
-  //   live: "https://agserver.net",
-  //   image: "/images/agserver_screenshot.png",
-  // },
   {
     id: 2,
     title: "Agserver",
@@ -50,7 +42,7 @@ export const projects = [
   {
     id: 3,
     title: "Jhns Portfolio",
-    stacks: ["next", "css", "maps api"],
+    stacks: ["next", "css", "framer"],
     source: "https://github.com/chibuzorEbede/portfolio",
     live: "https://jhnsc-portfolio.vercel.app/",
     image: "/images/portfolio_screenshot.png",

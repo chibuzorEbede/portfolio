@@ -40,7 +40,7 @@ function Home() {
         </h1>
 
         <p className={styles.mission}>
-          passionate about creating <br /> great experiences for my{" "}
+          passionate about creating great experiences for my{" "}
           <span className={styles.underline}>Clients</span>.
         </p>
         <div className={styles.projects}>
@@ -50,7 +50,7 @@ function Home() {
             </button>
           </Link>
           <p className={styles.things}>
-            Things I&apos;ve Kreated{" "}
+            Things I&apos;ve built{" "}
             <FaArrowRight
               style={{
                 transform: "rotate(35deg)",
@@ -87,7 +87,7 @@ const projectData = [
     id: 1,
     title: "JobRabbit",
     stack: "react | tailwind | jobs-api",
-    giturl: "github.com",
+    giturl: "https://github.com/chibuzorEbede/jobrabbit",
     liveurl: "https://jobrabbit.vercel.app/",
   },
   {
@@ -103,6 +103,13 @@ const projectData = [
     stack: "react | css | framer",
     giturl: "https://github.com/chibuzorEbede/portfolio",
     liveurl: "https://jhnsc-portfolio.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "iBuddy[building...]",
+    stack: "next | shadcn | LLMs",
+    giturl: "https://github.com/chibuzorEbede/ibuddy",
+    liveurl: "https://ibuddy.vercel.app/",
   },
 ];
 function Project({ title, stack, giturl, liveurl }) {

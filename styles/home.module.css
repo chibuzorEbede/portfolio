@@ -62,12 +62,19 @@
   margin-top: 2rem;
 }
 
+/* scroll wrapper */
 .projectsList {
-  padding: 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  padding: 0;
   gap: 0.5rem;
+  width: 100%;
+  height: 200px;
+  -webkit-overflow-scrolling: touch;
+}
+.projectsList::-webkit-scrollbar{
+  display: none;
 }
 
 /* make last child of project list visible */
@@ -76,14 +83,14 @@
 .project {
   padding: 1rem;
   border: 1px solid #000;
-  /* width: 193px; */
-  /* height: 205px; */
+  width: 50%;
+  height: 200px;
   flex: 0 0 auto;
   border-radius: 4px;
 }
 
 .stack{
-  font-size: medium;
+  /* font-size: medium; */
   margin-top: -4px;
 }
 
