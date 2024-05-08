@@ -32,16 +32,16 @@ function FullPost() {
             </p>
             <p>
               In the halls of antiquity, scholars pursued knowledge with
-              unwavering dedication, much like today's coders navigate the
+              unwavering dedication, much like today&apos;s coders navigate the
               intricate architectures of software. Just as ancient artisans
               honed their skills through practice, modern programmers refine
               their craft through relentless iteration and problem-solving.
             </p>
             <p>
               Moreover, the spirit of collaboration that permeated ancient
-              societies finds expression in today's coding community. Boundaries
-              dissolve as individuals unite in online forums, sharing insights
-              and solving problems together.
+              societies finds expression in today&apos;s coding community.
+              Boundaries dissolve as individuals unite in online forums, sharing
+              insights and solving problems together.
             </p>
             <p>
               Yet, amidst the complexities, there lies a simple joy in coding—a
