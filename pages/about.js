@@ -4,7 +4,6 @@ import Image from "next/image";
 import Socials from "../components/socials";
 import styles from "../styles/about.module.css";
 import utils from "../styles/utils.module.css";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 import { hardCodeMail } from "../lib/utils";
 
 function About() {
