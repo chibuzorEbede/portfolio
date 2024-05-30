@@ -1,23 +1,23 @@
 import React from "react";
 import styles from "/styles/socials.module.css";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
 
 const socials = ({ size }) => {
   return (
     <li className={styles.socialLinks}>
-      <Link href="https://twitter.com/techjaga97204" passHref>
+      <a href="https://twitter.com/techjaga97204" className={styles.socialLink}>
         <FaTwitter size={size} />
-      </Link>
-      <Link
-        href="https://www.linkedin.com/in/chibuzor-ebede-42ba36302"
-        passHref
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/chibuzor-ebede"
+        className={styles.socialLink}
       >
         <FaLinkedin size={size} />
-      </Link>
-      <Link href="https://github.com/chibuzorEbede" passHref>
+      </a>
+      <a href="https://github.com/chibuzorEbede" className={styles.socialLink}>
         <FaGithub size={size} />
-      </Link>
+      </a>
     </li>
   );
 };

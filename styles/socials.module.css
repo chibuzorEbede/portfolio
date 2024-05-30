@@ -2,10 +2,14 @@
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
-.socialLinks > * {
-  border: 1px solid black;
-  padding: 0.3rem;
-  /* cursor: pointer; */
+.socialLinks > a{
+  
+  padding: 0 0.3rem;
+  cursor: pointer;
+  /* border: 1px solid black; */
+
 }
+

@@ -5,9 +5,10 @@ import Socials from "../components/socials";
 import styles from "../styles/about.module.css";
 import utils from "../styles/utils.module.css";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
+import { hardCodeMail } from "../lib/utils";
 
 function About() {
+  const skills = ["html", "css", "javascript", "node js", "mongo db", "react"];
   return (
     <Layout>
       <div className={styles.wrapper}>
@@ -39,14 +40,16 @@ function About() {
             client’s ideas into reality.
           </p>
           <p>
-            When I am not coding, I&apos;m probably trapping to some old jazz.
+            When I am not coding, I&apos;m probably making some beat or reading.
             <br /> Connect with me? Use my socials or send me an email. <br />
           </p>
+          <div className={styles.skills}>
+            {skills.map((skill, i) => (
+              <Skill key={i} skill={skill} />
+            ))}
+          </div>
           <p>
-            Email:{" "}
-            <a href={`mailto:chibuzorebede@gmail.com`}>
-              chibuzorebede@gmail.com
-            </a>
+            <a href={`mailto:${atob(hardCodeMail)}@gmail.com`}>Email me</a>
           </p>
         </div>
       </div>
@@ -56,3 +59,7 @@ function About() {
 }
 
 export default About;
+
+const Skill = ({ skill }) => {
+  return <span className={styles.skill}>{skill}</span>;
+};

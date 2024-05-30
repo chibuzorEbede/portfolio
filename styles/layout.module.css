@@ -1,6 +1,5 @@
 .wrapper {
-  background-image: url("/images/bg-small.svg");
-  background-color: #f2d079;
+  background-color: var(--light);
   background-size: cover;
   /* background-attachment: fixed; */
   position: relative;
@@ -19,9 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  padding-bottom: 0;
-  /* border-bottom: 1px solid #000; */
+  padding: 1rem 1rem 0 1rem;
 }
 
 .hamburger {
@@ -43,6 +40,12 @@
   transform: rotate(90deg);
 }
 
+.darkModeButton{
+  font-size: 33px;
+  position: absolute;
+  right: 100px;
+}
+
 @media (min-width: 600px) {
   .wrapper {
     padding: 2rem 4rem;
@@ -54,5 +57,9 @@
 
   .hamburger {
     display: none;
+  }
+
+  .darkModeButton{
+    right: 390px;
   }
 }

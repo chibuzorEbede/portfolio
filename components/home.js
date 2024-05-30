@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import { formatString } from "../lib/utils";
 import styles from "/styles/home.module.css";
-import { FaArrowRight, FaGithub } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaGithub,
+  FaExternalLinkSquareAlt,
+} from "react-icons/fa";
+
 import { useTrail, a } from "@react-spring/web";
-import Image from "next/image";
 import Link from "next/link";
 
 function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
   const Trail = ({ open, children }) => {
     const items = React.Children.toArray(children);
     const trail = useTrail(items.length, {
@@ -33,7 +36,7 @@ function Home() {
       <div className={styles.left}>
         <h1 className={styles.intro}>
           {/* Fullstack <br /> */}
-          Jhn
+          Chibuzor
           <br />
           Software <br />
           Developer.
@@ -46,11 +49,11 @@ function Home() {
         <div className={styles.projects}>
           <Link href="/projects">
             <button className={styles.btn}>
-              things I&apos;ve made <FaArrowRight />{" "}
+              things I&apos;ve built <FaArrowRight />{" "}
             </button>
           </Link>
           <p className={styles.things}>
-            Things I&apos;ve built{" "}
+            Projects{" "}
             <FaArrowRight
               style={{
                 transform: "rotate(35deg)",
@@ -61,11 +64,13 @@ function Home() {
           <ul className={styles.projectsList}>
             {projectData.map((project) => (
               <Project
+                id={project.id}
                 key={project.id}
                 title={project.title}
                 stack={project.stack}
                 giturl={project.giturl}
                 liveurl={project.liveurl}
+                brief={project.brief}
               />
             ))}
           </ul>
@@ -82,6 +87,31 @@ function Home() {
 
 export default Home;
 
+function Project({ id, title, stack, giturl, liveurl, brief }) {
+  return (
+    <li className={styles.project}>
+      <h4 className={styles.title}>{title}</h4>
+      <p className={styles.id}>{id}</p>
+      <p className={styles.brief}>{formatString(brief)}</p>
+      <span className={styles.stack}>{stack}</span>
+
+      <div className={styles.links}>
+        <Link href={giturl} passHref>
+          <a>
+            <FaGithub />
+          </a>
+        </Link>
+
+        <Link href={liveurl} passHref>
+          <a>
+            <FaExternalLinkSquareAlt />
+          </a>
+        </Link>
+      </div>
+    </li>
+  );
+}
+
 const projectData = [
   {
     id: 1,
@@ -89,6 +119,8 @@ const projectData = [
     stack: "react | tailwind | jobs-api",
     giturl: "https://github.com/chibuzorEbede/jobrabbit",
     liveurl: "https://jobrabbit.vercel.app/",
+    brief:
+      "JobRabbit is a job board web app helping users easily find and apply for jobs across various industries and locations.",
   },
   {
     id: 2,
@@ -96,6 +128,8 @@ const projectData = [
     stack: "typescript | tailwind | rapid api",
     giturl: "https://github.com/chibuzorEbede/ag",
     liveurl: "https://agserver.vercel.app/",
+    brief:
+      " AgServer is a peer to peer knowledge sharing platform that enables farmers to ask questions and get answers from one another or  agents via any simple mobile phone without leaving their farms",
   },
   {
     id: 3,
@@ -103,6 +137,8 @@ const projectData = [
     stack: "react | css | framer",
     giturl: "https://github.com/chibuzorEbede/portfolio",
     liveurl: "https://jhnsc-portfolio.vercel.app/",
+    brief:
+      " JobRabbit is a job board web app helping users easily find and apply for jobs across various industries and locations.",
   },
   {
     id: 4,
@@ -110,21 +146,7 @@ const projectData = [
     stack: "next | shadcn | LLMs",
     giturl: "https://github.com/chibuzorEbede/ibuddy",
     liveurl: "https://ibuddy.vercel.app/",
+    brief:
+      " JobRabbit is a job board web app helping users easily find and apply for jobs across various industries and locations.",
   },
 ];
-function Project({ title, stack, giturl, liveurl }) {
-  return (
-    <li className={styles.project}>
-      <h4>{title}</h4>
-      <span className={styles.stack}>{stack}</span>
-      <div className={styles.links}>
-        <Link href={giturl} passHref>
-          <FaGithub />
-        </Link>
-        <Link href={liveurl} passHref>
-          <FaArrowRight />
-        </Link>
-      </div>
-    </li>
-  );
-}

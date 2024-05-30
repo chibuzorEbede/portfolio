@@ -2,7 +2,7 @@
   position: absolute;
   min-height: 100vh;
   width: 100%;
-  background-color: #f2d079;
+  background-color: var(--light);
   z-index: 2;
   font-family: "Fredericka the Great", cursive;
   overflow-y: hidden;

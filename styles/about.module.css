@@ -4,10 +4,23 @@
   line-height: 1.5;
 }
 .aboutText {
-  font-size: 26px;
+  font-size: 20px;
+  line-height: 1.5;
 }
 .aboutImage {
   margin-top: 26px;
+}
+
+.skills{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.skill{
+  display: inline;
+  border: 1px solid var(--dark);
+  padding: 0.2rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 600px) {
@@ -23,7 +36,7 @@
   .aboutText {
     margin: 0;
     padding: 0;
-    line-height: 1;
+    line-height: 1.5;
 
     max-width: 60%;
   }

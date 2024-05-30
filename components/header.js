@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/layout.module.css";
 import Link from "next/link";
 import MobileMenu from "./mobilemenu";
+import { MdLightMode } from "react-icons/md";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,14 +11,26 @@ function Header() {
     //open the menu page
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const toggleDarkMode = () => {
+    alert("yo");
+  };
   return (
     <header>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href={`/`} passHref>
-            <Image alt="logo" height={55} width={55} src="/images/logo.svg" />
+            <a>
+              <Image
+                alt="logo"
+                height={55}
+                width={55}
+                src="/images/logo2.svg"
+              />
+            </a>
           </Link>
         </div>
+
         <div>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
@@ -32,6 +45,11 @@ function Header() {
             </li>
           </ul>
         </div>
+        <MdLightMode
+          onClick={toggleDarkMode}
+          className={styles.darkModeButton}
+        />
+
         <div className={styles.hamburger} onClick={() => menuHandler()}>
           <Image
             alt=""
