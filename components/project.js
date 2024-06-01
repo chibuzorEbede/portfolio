@@ -14,10 +14,10 @@ function Project({ image, title, stacks, source, live }) {
           {stacks.map((stack) => `${stack}. `)}
         </span>
         <div className={styles.links}>
-          <a href={source} target="_blank">
+          <a href={source} target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a href={live} target="_blank">
+          <a href={live} target="_blank" rel="noreferrer">
             <FaArrowRight />
           </a>
         </div>

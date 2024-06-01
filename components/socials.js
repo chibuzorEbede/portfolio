@@ -9,6 +9,7 @@ const socials = ({ size }) => {
         href="https://twitter.com/techjaga97204"
         className={styles.socialLink}
         target="_blank"
+        rel="noreferrer"
       >
         <FaTwitter size={size} />
       </a>
@@ -17,6 +18,7 @@ const socials = ({ size }) => {
         href="https://www.linkedin.com/in/chibuzor-ebede"
         className={styles.socialLink}
         target="_blank"
+        rel="noreferrer"
       >
         <FaLinkedin size={size} />
       </a>
@@ -24,6 +26,7 @@ const socials = ({ size }) => {
         href="https://github.com/chibuzorEbede"
         className={styles.socialLink}
         target="_blank"
+        rel="noreferrer"
       >
         <FaGithub size={size} />
       </a>

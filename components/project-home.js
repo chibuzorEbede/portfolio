@@ -11,11 +11,11 @@ function ProjectHome({ id, title, stack, giturl, liveurl, brief }) {
       <span className={styles.stack}>{stack}</span>
 
       <div className={styles.links}>
-        <a target="_blank" href={giturl}>
+        <a target="_blank" rel="noreferrer" href={giturl}>
           <FaGithub />
         </a>
 
-        <a target="_blank" href={liveurl}>
+        <a target="_blank" rel="noreferrer" href={liveurl}>
           <FaExternalLinkSquareAlt />
         </a>
       </div>
