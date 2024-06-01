@@ -5,11 +5,13 @@ import Socials from "../components/socials";
 import styles from "../styles/about.module.css";
 import utils from "../styles/utils.module.css";
 import { hardCodeMail } from "../lib/utils";
-
+import { skills } from "../lib/placeholder-data";
+import Title from "../components/title";
+import Skill from "../components/skill";
 function About() {
-  const skills = ["html", "css", "javascript", "node js", "mongo db", "react"];
   return (
     <Layout>
+      <Title currentPage="about" />
       <div className={styles.wrapper}>
         <div className={styles.aboutImage}>
           <Image
@@ -58,7 +60,3 @@ function About() {
 }
 
 export default About;
-
-const Skill = ({ skill }) => {
-  return <span className={styles.skill}>{skill}</span>;
-};

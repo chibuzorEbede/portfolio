@@ -2,22 +2,31 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sree+Krushnadevaraya&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sree+Krushnadevaraya&display=swap');
 :root{
-  --dark: #000;
-  --light: #fff;
-  --primary: #0000007e;
-  --secondary: #817f79;
-
   
-  /* --primary: #20c4bb; */
-  /* --primary: #f2d079; */
-  /* --secondary: #f2d079; */
-
+  --background: #f8f8ef;
+  --text-primary: #0f0f0f;
+  --text-secondary: #4e4e4e;
+  --accent: #dfb017;
+  --accent-hover: #cea315; 
+  --border: #1f1e1e;
+  --shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
+[data-theme='dark'] {
+  --background: #05010a;
+  --text-primary: #f2f2f2;
+  --text-secondary: #a7a4a4;
+  --accent: #6a5acd;
+  --accent-hover: #5b4cbe; 
+  --border: #696969;
+  --shadow: 7px 15px 13px -4px #ffffff1b;
+}
 
 * {
   box-sizing: border-box;
 }
+
+
 
 
 html,
@@ -25,18 +34,21 @@ body {
   padding: 0;
   margin: 0;
   font-family:  "Lato",sans-serif;
-  line-height: 1.7;
+  line-height: 1.2;
   font-size: 20px;
 }
 
+
+
 a {
-  color: var(--secondary);
+  color: var(--text-secondary);
   text-decoration: none;
-  
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--accent);
 }
 
 img {
@@ -49,6 +61,8 @@ ul {
 }
 
 
+
+
 /**************************/
 /* custom stylings below */
 /**************************/
@@ -59,16 +73,11 @@ ul {
 body::-webkit-scrollbar {
   width: .5em;
   /* background-color: rgba(0, 0, 0, 0.261); */
-  background-color: var(--secondary);
+  background-color: var(--accent);
 
 }
 body::-webkit-scrollbar-thumb{
   /* background-color: rgba(0, 0, 0, 0.436); */
-  background-color: var(--primary);
+  background-color: var(--border);
 }
-
-/* mouse */
-/* body{
-  cursor: url("../public/images/cursor_image_svg.svg") , auto;
-} */
 

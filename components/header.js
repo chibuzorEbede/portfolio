@@ -4,6 +4,7 @@ import styles from "../styles/layout.module.css";
 import Link from "next/link";
 import MobileMenu from "./mobilemenu";
 import { MdLightMode } from "react-icons/md";
+import Logo from "./logo";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,18 +19,7 @@ function Header() {
   return (
     <header>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href={`/`} passHref>
-            <a>
-              <Image
-                alt="logo"
-                height={55}
-                width={55}
-                src="/images/logo2.svg"
-              />
-            </a>
-          </Link>
-        </div>
+        <Logo />
 
         <div>
           <ul className={styles.navList}>

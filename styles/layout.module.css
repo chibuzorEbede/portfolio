@@ -1,5 +1,8 @@
+/* root layout for the pages */
+
 .wrapper {
-  background-color: var(--light);
+  background-color: var(--background);
+  color: var(--text-primary);
   background-size: cover;
   /* background-attachment: fixed; */
   position: relative;
@@ -10,9 +13,9 @@
   padding: 0 1rem 0 1rem;
 }
 
-.logo {
+/* .logo {
   cursor: pointer;
-}
+} */
 
 .navbar {
   display: flex;

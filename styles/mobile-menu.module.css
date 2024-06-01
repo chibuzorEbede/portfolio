@@ -2,10 +2,11 @@
   position: absolute;
   min-height: 100vh;
   width: 100%;
-  background-color: var(--light);
+  background-color: var(--background);
   z-index: 2;
   font-family: "Fredericka the Great", cursive;
-  overflow-y: hidden;
+  overflow-y:hidden;
+  border-bottom: 1px solid var(--border);
 }
 
 .menuLinks > * {

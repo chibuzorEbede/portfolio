@@ -1,5 +1,5 @@
 .post {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -11,9 +11,9 @@
   margin-top: 1rem;
 }
 .date {
-  background-color: #000;
-  color: #f2d079;
-  width: 30%;
+  background-color: var(--text-primary);
+  color: var(--accent);
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

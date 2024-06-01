@@ -9,6 +9,8 @@ import {
 
 import { useTrail, a } from "@react-spring/web";
 import Link from "next/link";
+import ProjectHome from "./project-home";
+import { projectData } from "../lib/placeholder-data";
 
 function Home() {
   const Trail = ({ open, children }) => {
@@ -32,7 +34,7 @@ function Home() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <div className={styles.left}>
         <h1 className={styles.intro}>
           {/* Fullstack <br /> */}
@@ -63,7 +65,7 @@ function Home() {
           </p>
           <ul className={styles.projectsList}>
             {projectData.map((project) => (
-              <Project
+              <ProjectHome
                 id={project.id}
                 key={project.id}
                 title={project.title}
@@ -81,72 +83,8 @@ function Home() {
           <span className={styles.ball}>o</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 export default Home;
-
-function Project({ id, title, stack, giturl, liveurl, brief }) {
-  return (
-    <li className={styles.project}>
-      <h4 className={styles.title}>{title}</h4>
-      <p className={styles.id}>{id}</p>
-      <p className={styles.brief}>{formatString(brief)}</p>
-      <span className={styles.stack}>{stack}</span>
-
-      <div className={styles.links}>
-        <Link href={giturl} passHref>
-          <a>
-            <FaGithub />
-          </a>
-        </Link>
-
-        <Link href={liveurl} passHref>
-          <a>
-            <FaExternalLinkSquareAlt />
-          </a>
-        </Link>
-      </div>
-    </li>
-  );
-}
-
-const projectData = [
-  {
-    id: 1,
-    title: "JobRabbit",
-    stack: "react | tailwind | jobs-api",
-    giturl: "https://github.com/chibuzorEbede/jobrabbit",
-    liveurl: "https://jobrabbit.vercel.app/",
-    brief:
-      "JobRabbit is a job board web app helping users easily find and apply for jobs across various industries and locations.",
-  },
-  {
-    id: 2,
-    title: "Agserver",
-    stack: "typescript | tailwind | rapid api",
-    giturl: "https://github.com/chibuzorEbede/ag",
-    liveurl: "https://agserver.vercel.app/",
-    brief:
-      " AgServer is a peer to peer knowledge sharing platform that enables farmers to ask questions and get answers from one another or  agents via any simple mobile phone without leaving their farms",
-  },
-  {
-    id: 3,
-    title: "Portfolio",
-    stack: "react | css | framer",
-    giturl: "https://github.com/chibuzorEbede/portfolio",
-    liveurl: "https://jhnsc-portfolio.vercel.app/",
-    brief:
-      " JobRabbit is a job board web app helping users easily find and apply for jobs across various industries and locations.",
-  },
-  {
-    id: 4,
-    title: "iBuddy[building...]",
-    stack: "next | shadcn | LLMs",
-    giturl: "https://github.com/chibuzorEbede/ibuddy",
-    liveurl: "https://ibuddy.vercel.app/",
-    brief:
-      " JobRabbit is a job board web app helping users easily find and apply for jobs across various industries and locations.",
-  },
-];

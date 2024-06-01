@@ -12,7 +12,6 @@
   margin: 0;
   font-size: 26px;
   line-height: 154%;
-  /* max-width: 60%; */
 }
 
 .underline {
@@ -37,8 +36,7 @@
 }
 
 .btn {
-  color: var(--secondary);
-  background-color: var(--dark);
+  background-color: var(--accent);
   font-size: 20px;
   padding: 0.6em;
   border: none;
@@ -51,7 +49,7 @@
 }
 
 .ring {
-  border: 1px solid #000;
+  border: 1px solid var(--border);
   border-radius: 50%;
   width: 370px;
   height: 370px;
@@ -82,17 +80,16 @@
 
 .project {
   padding: 1rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--border);
   flex: 0 0 250px;
   height: 350px;
   /* border-radius: 4px; */
   position: relative;
+  box-shadow: var(--shadow);
 
 }
 
-.project::after{
-  border: 2px solid red;
-}
+
 
 .id{
   font-size: 40px;
@@ -104,19 +101,24 @@
   margin: 0;
 }
 .title{
-  padding: 0;
+  padding: .5rem 0;
   margin: 0;
+  font-family: "Fredericka the Great";
+
 }
 
 .stack{
-  font-size: 18px;
-  color: var(--primary);
+  font-size: 14px;
+  color: var(--accent);
+  background-color:  var(--text-primary);
+  padding: 0.2rem;
+  display: flex;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
-  margin-top: 8px;
+  padding-top: 1rem;
 }
 .brief{
   text-wrap: wrap;
@@ -138,7 +140,7 @@
   .mission {
     font-size: 28px;
     font-size: 40px;
-    max-width: 80%;
+    max-width: 50%;
     line-height: 1.2;
   }
 

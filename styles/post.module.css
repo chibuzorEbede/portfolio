@@ -1,24 +1,38 @@
 .post {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 1rem;
   cursor: pointer;
+  padding: 0.3rem;
+  box-shadow: var(--shadow);
+  min-height: 300px;
+}
+
+.post:hover, .post:focus{
+  border: 1px solid var(--accent);
+
 }
 
 .title {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Fredericka the Great";
   margin: 0;
 }
 .date {
-  background-color: #000;
-  color: #f2d079;
-  width: 27%;
+  background-color: var(--text-primary);
+  color: var(--accent);
   padding: 0.2rem;
   margin-top: 0.3rem;
   margin-bottom: -1rem;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
+
 }
 .body {
-  font-size: 26px;
+  font-size: 20px;
 }
+
+.title, .date, .body{
+  padding: .2rem 0;
+}
+
+
