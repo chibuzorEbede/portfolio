@@ -8,10 +8,11 @@ function Logo() {
       <Link href={`/`} passHref>
         <a>
           <Image
+            className={styles.image}
             alt="ce website logo"
             height={55}
             width={55}
-            src="/images/logo.svg"
+            src="/images/about_image.png"
           />
         </a>
       </Link>

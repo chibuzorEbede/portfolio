@@ -11,10 +11,11 @@ function Posts() {
       <div>
         <Title currentPage={`posts`} />
         <section>
-          <p className={styles.title}>Thoughts?</p>
+          <p className={styles.title}>Posts</p>
           <div className={styles.postsWrapper}>
             {posts.map((post) => (
               <Post
+                id={post.id}
                 key={post.id}
                 title={post.title}
                 date={post.date}

@@ -41,13 +41,14 @@ function Header() {
         />
 
         <div className={styles.hamburger} onClick={() => menuHandler()}>
-          <Image
+          {/* <Image
             alt=""
             className={isMenuOpen ? styles.rotateRight : undefined}
             height={45}
             width={45}
             src="/images/hamburger.svg"
-          />
+          /> */}
+          <p>Menu</p>
           {/* Menu */}
         </div>
       </nav>

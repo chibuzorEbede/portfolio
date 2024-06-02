@@ -1,9 +1,10 @@
 .title {
-  font-family: "Fredericka the Great";
-  font-weight: 400;
+  font-family:  "Lato",sans-serif;
+  font-weight: bold;
   font-size: 32px;
   text-align: center;
-  /* text-decoration: underline; */
+  text-decoration: underline;
+  text-align: left;
 }
 
 /* styling for project card */
@@ -11,24 +12,26 @@
 /* TODO improve the box shadow on the card component*/
 .card{
   flex: 0 0 auto;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  /* border-bottom: 2px solid var(--border); */
+  box-shadow: var(--shadow--large);
+  border-bottom: 2px solid var(--border);
 }
 .card:hover, .card:focus{
-  border: 1px solid var(--accent);
-
+  border-bottom: 2px solid var(--accent);
 }
 .cardHeader{
   margin-bottom: 0;
-  padding-bottom: 0;  
+  padding-bottom: 0; 
+  max-height: 300px; 
 }
 .cardHeader > *{
   min-width: 100%;
   
 }
 .cardFooter{
-  margin-top: -40px;
+  margin-top: 0;
   padding: .2rem .6rem;
+  height: 200px;
 }
 .cardTitle{
   margin-bottom: 0;
@@ -53,7 +56,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 @media (min-width: 600px) {
@@ -64,9 +67,16 @@
   .projectsList {
     display: grid;
     gap: 4rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
   }
  
+  .links{
+    display: block;
+  }
+  .links > a{
+    margin-right: 40px;
+  }
+  
 }
 
 @media (min-width: 900px) {

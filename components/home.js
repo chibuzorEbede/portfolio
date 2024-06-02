@@ -6,11 +6,12 @@ import {
   FaGithub,
   FaExternalLinkSquareAlt,
 } from "react-icons/fa";
+import Socials from "./socials";
 
 import { useTrail, a } from "@react-spring/web";
-import Link from "next/link";
 import ProjectHome from "./project-home";
 import { projectData } from "../lib/placeholder-data";
+import Button from "./button";
 
 function Home() {
   const Trail = ({ open, children }) => {
@@ -36,24 +37,15 @@ function Home() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.left}>
-        <h1 className={styles.intro}>
-          {/* Fullstack <br /> */}
-          Chibuzor
-          <br />
-          Software <br />
-          Developer.
-        </h1>
+        <h1 className={styles.intro}> Software Developer</h1>
 
         <p className={styles.mission}>
           passionate about creating great experiences for my{" "}
-          <span className={styles.underline}>Clients</span>.
+          <span className={styles.underline}>Users.</span>
         </p>
+        <Socials size={20} />
         <div className={styles.projects}>
-          <Link href="/projects">
-            <button className={styles.btn}>
-              things I&apos;ve built <FaArrowRight />{" "}
-            </button>
-          </Link>
+          <Button />
           <p className={styles.things}>
             Projects{" "}
             <FaArrowRight
@@ -81,6 +73,10 @@ function Home() {
       <div className={styles.right}>
         <div className={styles.ring}>
           <span className={styles.ball}>o</span>
+          <p className={styles.quote}>Did you know?</p>
+          <p>1. Spiders are the best web developers.</p>
+          <p>2. Technically, bumble bees can&apos;t fly.</p>
+          <p>3. We can achieve anything we set our minds to. </p>
         </div>
       </div>
     </section>

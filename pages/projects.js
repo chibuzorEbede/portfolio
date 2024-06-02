@@ -10,7 +10,7 @@ function Projects() {
     <Layout>
       <Title currentPage="projects" />
       <section>
-        <p className={styles.title}>Things I&apos;ve Built</p>
+        <p className={styles.title}>Projects</p>
         <ul className={styles.projectsList}>
           {projects.map((project) => (
             <Project

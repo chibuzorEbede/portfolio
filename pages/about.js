@@ -26,9 +26,10 @@ function About() {
             <p className={utils.capitalize}>H</p>i there,
           </p> */}
           <p>
-            <u className={utils.capitalize}>Hi,</u> <br />
-            I&apos;m Chibuzor Ebede. <br /> A Frontend Software Developer from
-            somewhere on the equator.
+            <span className={utils.capitalize}>Hi,</span> <br />
+            My name is Chibuzor Ebede, <br />
+            and you are welcome to my spot on the inter web. <br /> I am a
+            Fullstack Software Developer ,[MERN], from somewhere on the equator.
           </p>
           {/* <p>
             I usually work with different front end frameworks (React, Next,

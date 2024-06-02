@@ -4,7 +4,7 @@
   width: 100%;
   background-color: var(--background);
   z-index: 2;
-  font-family: "Fredericka the Great", cursive;
+  font-family:  "Lato",sans-serif;
   overflow-y:hidden;
   border-bottom: 1px solid var(--border);
 }

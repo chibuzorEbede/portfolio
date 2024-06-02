@@ -9,6 +9,7 @@
 }
 .aboutImage {
   margin-top: 26px;
+  filter: grayscale();
 }
 
 .skills{
@@ -36,8 +37,9 @@
   .aboutText {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
-
-    max-width: 60%;
+    line-height: 1.4;
+letter-spacing: normal;
+    max-width: 45%;
+    text-justify: inter-word;
   }
 }

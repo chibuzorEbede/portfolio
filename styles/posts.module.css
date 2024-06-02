@@ -1,8 +1,8 @@
 .title {
-  font-family: "Fredericka the Great";
-  font-weight: 400;
+  font-family: "Lato",sans-serif;
+  font-weight: bold;
   font-size: 32px;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 @media (min-width: 600px) {
@@ -12,8 +12,9 @@
   }
   .postsWrapper {
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr;
+    
   }
 }
 @media (min-width: 840px) {
@@ -27,3 +28,4 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+

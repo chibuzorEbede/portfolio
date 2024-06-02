@@ -1,6 +1,5 @@
 
-/* @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sree+Krushnadevaraya&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sree+Krushnadevaraya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sree+Krushnadevaraya&display=swap');
 :root{
   
   --background: #f8f8ef;
@@ -10,6 +9,8 @@
   --accent-hover: #cea315; 
   --border: #1f1e1e;
   --shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  --shadow--large: 0px 10px 20px -3px rgba(0,0,0,0.1);
+
 }
 
 [data-theme='dark'] {
@@ -19,11 +20,15 @@
   --accent: #6a5acd;
   --accent-hover: #5b4cbe; 
   --border: #696969;
-  --shadow: 7px 15px 13px -4px #ffffff1b;
+  --shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  --shadow--large: 0px 10px 20px -3px rgba(0,0,0,0.1);
+
+
 }
 
 * {
   box-sizing: border-box;
+
 }
 
 

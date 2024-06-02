@@ -1,11 +1,9 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Image from "next/image";
-import Socials from "../../components/socials";
 import styles from "../../styles/fullpost.module.css";
 import utils from "../../styles/utils.module.css";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
+import { posts } from "../../lib/placeholder-data";
 
 function FullPost() {
   return (
