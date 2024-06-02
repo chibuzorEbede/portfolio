@@ -3,9 +3,8 @@
 .wrapper {
   background-color: var(--background);
   color: var(--text-primary);
-  background-size: cover;
-  /* background-attachment: fixed; */
   position: relative;
+  min-height: 100vh;
 }
 
 .container {
@@ -47,6 +46,11 @@
   font-size: 33px;
   position: absolute;
   right: 100px;
+}
+.menuButton{
+  box-shadow: var(--shadow);
+  padding: 0.3rem;
+  /* border: 2px solid var(--border); */
 }
 
 @media (min-width: 600px) {

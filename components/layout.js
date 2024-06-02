@@ -5,7 +5,7 @@ import Footer from "./footer";
 
 function layout({ children }) {
   return (
-    <div data-theme="light" className={styles.wrapper}>
+    <div data-theme="light" className={styles.wrapper} id="layout">
       <Header />
       <div className={styles.container}>{children}</div>
       <Footer />

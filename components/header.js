@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/layout.module.css";
 import Link from "next/link";
@@ -12,10 +12,15 @@ function Header() {
     //open the menu page
     setIsMenuOpen(!isMenuOpen);
   };
+  const [theme, setTheme] = useState("dark");
 
   const toggleDarkMode = () => {
-    alert("yo");
+    setTheme(theme === "light" ? "dark" : "light");
   };
+  useEffect(() => {
+    const el = document.querySelector("#layout");
+    el.setAttribute("data-theme", `${theme}`);
+  }, [theme]);
   return (
     <header>
       <nav className={styles.navbar}>
@@ -48,7 +53,7 @@ function Header() {
             width={45}
             src="/images/hamburger.svg"
           /> */}
-          <p>Menu</p>
+          <p className={styles.menuButton}>Menu</p>
           {/* Menu */}
         </div>
       </nav>
