@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import styles from "../styles/layout.module.css";
 import Link from "next/link";
 import MobileMenu from "./mobilemenu";
@@ -12,15 +11,19 @@ function Header() {
     //open the menu page
     setIsMenuOpen(!isMenuOpen);
   };
-  const [theme, setTheme] = useState("dark");
 
   const toggleDarkMode = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    const el = document.querySelector("#layout");
+    el.setAttribute("data-theme", `dark`);
+    console.log("theme is:", localStorage.getItem("userTheme"));
+    //wait for tomorrow
   };
   useEffect(() => {
-    const el = document.querySelector("#layout");
-    el.setAttribute("data-theme", `${theme}`);
-  }, [theme]);
+    localStorage.setItem("userTheme", "dark");
+    // const el = document.querySelector("#layout");
+    // el.setAttribute("data-theme", `${theme}`);
+  }, []);
+
   return (
     <header>
       <nav className={styles.navbar}>

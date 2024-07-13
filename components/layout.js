@@ -2,13 +2,15 @@ import React from "react";
 import styles from "/styles/layout.module.css";
 import Header from "./header";
 import Footer from "./footer";
+import { Analytics } from "@vercel/analytics/react";
 
 function layout({ children }) {
   return (
-    <div data-theme="light" className={styles.wrapper} id="layout">
+    <div className={styles.wrapper} id="layout">
       <Header />
       <div className={styles.container}>{children}</div>
       <Footer />
+      <Analytics />
     </div>
   );
 }
