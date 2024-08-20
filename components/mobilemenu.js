@@ -31,13 +31,13 @@ function mobileMenu() {
 const socials = () => {
   return (
     <li className={styles.socialLinks}>
-      <Link href="https://twitter.com" passHref>
+      <Link href="https://twitter.com" passHref legacyBehavior>
         <FaTwitter />
       </Link>
-      <Link href="https://linkedin.com" passHref>
+      <Link href="https://linkedin.com" passHref legacyBehavior>
         <FaLinkedin />
       </Link>
-      <Link href="https://github.com" passHref>
+      <Link href="https://github.com" passHref legacyBehavior>
         <FaGithub />
       </Link>
     </li>

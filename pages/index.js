@@ -12,4 +12,4 @@ export default function Home() {
     </Layout>
   );
 }
-// chibuzor.dev/portfolio
+// chibuzor.online/portfolio

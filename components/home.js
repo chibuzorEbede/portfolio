@@ -74,7 +74,7 @@ function Home() {
         <div className={styles.ring}>
           <span className={styles.ball}>o</span>
           <p className={styles.quote}>Did you know?</p>
-          <p>1. Spiders are the best web developers.</p>
+          <p>1. Spiders are, technically, the best web developers.</p>
           <p>2. Technically, bumble bees can&apos;t fly.</p>
           <p>3. We can achieve anything we set our minds to. </p>
         </div>

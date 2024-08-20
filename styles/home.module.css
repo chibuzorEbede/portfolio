@@ -126,10 +126,13 @@
 .stack{
   font-size: 14px;
   color: var(--accent);
-  background-color:  var(--text-primary);
   padding: 0.2rem;
   display: flex;
+  background-color:  var(--text-primary);
+
 }
+
+
 
 .links {
   display: flex;

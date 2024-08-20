@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 function Button() {
   return (
-    <Link href="/projects">
+    <Link href="/projects" legacyBehavior>
       <button className={styles.btn}>
         things I&apos;ve built <FaArrowRight />{" "}
       </button>

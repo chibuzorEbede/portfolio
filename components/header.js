@@ -12,16 +12,21 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  //fixed dark/light mode toggle
   const toggleDarkMode = () => {
     const el = document.querySelector("#layout");
-    el.setAttribute("data-theme", `dark`);
-    console.log("theme is:", localStorage.getItem("userTheme"));
-    //wait for tomorrow
+    //read the local storage
+    let theme = localStorage.getItem("userTheme");
+    //set its current value
+    el.setAttribute("data-theme", theme);
+    //then toggle the current value
+
+    //then save it back to local storage
+    localStorage.setItem("userTheme", theme === "dark" ? "light" : "dark");
   };
   useEffect(() => {
+    console.log("running use effect");
     localStorage.setItem("userTheme", "dark");
-    // const el = document.querySelector("#layout");
-    // el.setAttribute("data-theme", `${theme}`);
   }, []);
 
   return (
